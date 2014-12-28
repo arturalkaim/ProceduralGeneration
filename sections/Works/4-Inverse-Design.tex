@@ -1,0 +1,22 @@
+%!TEX root = ../../report.tex
+
+\subsection{Inverse Design} % (fold)
+\label{sub:inverse_design}
+
+
+In \cite{Vanegas2009} it is presented a different solution from the others already presented.
+It's described a framework that enables high level control of the modelling process. It ``provides a mechanism to interactively edit urban models". They apply inverse design to solve the problem of output control. From an existing model, the user can specify high level indicators that describe the desired output and the system change the underlying rules and parameters to get the result as close as possible to the desired.
+As the flowing image shows, the user can change the ``low level" parameters and the ``high level" indicators to control the final output of the system.
+
+
+This framework uses the indicators as a goal to optimize the parameters. To calculate the values for the parameters they used a version of Monte Carlo Markov Chains (or MCMC) and Resilient Back Propagation.
+
+
+They implemented a urban procedural engine ``similar to previous city-level procedural modelling work". It was inspired by urban planners, that use the place types concept to represent coherent design patterns of buildings and streets. 
+
+With this approach, the authors claim two main advantages, Abstraction and Interactivity. They argue that this solution allows urban planners and designers to work at a high level of abstraction, enabling users to manipulate place types, parameters and indicators to create the 3D model they want without wasting time with low level tasks as implementation of low level rules or parameter tuning.
+At the same time this approach enables the users to interactively manipulate very complex indicator targets with a ``sophisticated enough" methodology to map target indicators to input low level parameters.
+
+(\dots)
+
+% subsection inverse_design (end)

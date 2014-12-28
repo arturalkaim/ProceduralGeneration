@@ -1,10 +1,20 @@
 \documentclass{./llncs2e/llncs}
+
 \usepackage{graphicx}
-\usepackage{fixltx2e}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%\usepackage{fixltx2e}
 \usepackage{mathtools}
 \usepackage[nolist,nohyperlinks]{acronym}
 % Maintain images and tables within their respective sections
-\usepackage[section]{placeins}
+\usepackage[section,subsection,subsubsection]{extraplaceins}
+\usepackage{epstopdf}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{url}
+\usepackage{lipsum}
 
 % 
 % Change the margins
@@ -15,9 +25,14 @@
 \title{Procedural Generation}
 
 \subtitle{Your Thesis subtitle}
-\author{Artur Alkaim, arturalkaim@tecnico.ulisboa.pt}
-\institute{Universidade de Lisboa}
+\author{Artur Alkaim \and António Leitão}
 
+\institute{Instituto Superior Técnico, Universidade de Lisboa
+\path|{arturalkaim, antonio.menezes.leitao}@tecnico.ulisboa.pt|
+\url{http://tecnico.ulisboa.pt/}}
+
+\toctitle{Procedural Generation}
+\tocauthor{Artur Alkaim, António Leitão}
 \maketitle
 
 \input{sections/1-abstract.tex}
@@ -29,9 +44,8 @@
 \input{sections/7-evaluation.tex}
 \input{sections/8-conclusions.tex}
 \newpage
-\appendix
-\input{sections/9-appendix.tex}
-
+%\appendix
+%\input{sections/9-appendix.tex}
 
 
 % 
