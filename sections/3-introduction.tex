@@ -5,28 +5,34 @@
 % 
 
 \section{Introduction (2/3pgs)}
+\label{sec:Introduction}
 
-General description of the problem and its context, current solutions, and road map of the project.
-
-(\dots)
-
-\subsection{Procedural Generation} % (fold)
-\label{sub:procedural_generation}
-
+%General description of the problem and its context, current solutions, and road map of the project.
 
 As technology evolves and people get new and more powerful devices, they want to take advantage of that with more detailed and complex contents to have more realistic experiences. 
-And this is observable in the graphic contents. With more de definition of the screens and the computational power of the machines beating records, the graphic content have to follow up that characteristics in quantity as well as in quality. The issue is that the manual content generation takes a long work time from artists to achieve this quality.
-The obvious answer to this problem is to contract more artists to each project to increase the production, but experience have shown that this solution is not scalable, that means that double the number of artists working in a project will not double their overall productivity. And this solution have a big impact on costs, that would take immediately out of the market new producers with less resources.
+And this is observable in the graphic contents. With more de definition of the screens and the computational power of the machines beating records, the graphic content have to follow up that characteristics in quantity as well as in quality. The issue is that the manual content generation takes a long work time from architects and designers to achieve this quality.
+The obvious answer to this problem is to contract more architects or designers to each project to increase the production, but experience have shown that this solution is not scalable, that means that double the number of architects or designers working in a project will not double their overall productivity. And this solution have a big impact on costs, that would take immediately out of the market new producers with less resources.
 
-There is a area of research that tries to solve this problem with \emph{Procedural Content Generation}, or \emph{Procedural Generation}.
+A solution for this problem is the use of generative design. That is a design method that is based on a programming approach which allows architects and designers to model complex shapes with significantly less effort. 
 
-Procedural Generation is the algorithmic generation of content in stead of the usual manual creation of content. This can be applied in almost all forms of content, but is mostly used in graphics creation and sound (music and synthetic speech).
-``The key property of procedural generation is that in describes the data entity, be it geometry, texture or effect, in terms of a sequence of generation instructions rather than as a static block of data.''\cite{Kelly} This allows anyone with less resources to produce high detailed, and high quality content.
+Most computer-aided design (CAD) application provide progamming languages for generative design, programs writen in these languages have very limited portability and are not pedagogical and most of them are poorly designed or obsolete, reasons that create barriers to adherence to this approach by users that normally are not used to code \cite{ramos_et_al:OASIcs:2014:4565}.
 
-\input{sections/3-1-Procedural_Modelling_Techniques.tex}
+\textbf{(Talk aboud DrRacket and how user friendlly it is. \dots)}
 
-% subsection procedural_generation (end)
+The tool Rosetta is an extensible IDE for generative design, based on DrRacket and targeted at architects and designers \cite{Leit2012} created to address this problem by providing a user friendly integrated development environment (IDE) and a set of different languages. 
+
+
+There is an area of research that addresses this problem with \emph{Procedural Content Generation}, or \emph{Procedural Generation}.
+
+
+
+\input{sections/3-0-Overview.tex}
+
+
 
 %``As ferramentas de CAD existentes estão vocacionadas para uma utilização manual. Infelizmente, a produção manual de grandes quantidades de formas arquitectónicas complexas é muito morosa. A geração procedimental dessas formas é uma das abordagens que permite acelerar substancialmente esse processo. Esta abordagem consiste na construção algorítmica dessas formas, empregando Gramáticas de Formas, L-systems, Autómatos Celulares, etc. Nesta tese pretende a exploração destas técnicas e a sua implementação na ferramenta Rosetta. A avaliação poderá incluir geração de ambientes urbanos, de edifícios e de ornamentação de acordo com um determinado estilo arquitectónico.``
 
 % `` The existing CAD tools are geared for manual use. Unfortunately, the manual production of large amounts of complex architectural forms is very time consuming. Procedural generation of these forms is one of the approaches which considerably speed up this process . This approach is the algorithmic construction of these forms , using grammars forms , L -systems , Automatic Phones, etc. This thesis aims to exploit these techniques and their implementation in Rosetta tool. The assessment may include generation of urban environments , buildings and ornaments according to a certain style arquitectónico.``
+
+% section section_name (end)
+
