@@ -1,5 +1,7 @@
 pdflatex report
+pdflatex report
 bibtex report
+pdflatex report
 pdflatex report
 pdflatex report
 rm *.aux

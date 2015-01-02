@@ -20,6 +20,7 @@ To achieve that, it uses agent based simulation to create a system of agents and
 \subsubsection{Road Network} % (fold)
 \label{ssub:road_network}
 The road network is designed by the agents based on the input terrain description wish will describe the height map and forbidden areas for roads, as water. 
+
 The user can specify that the roads must follow a pre-established gridded pattern, or give the freedom to network to grow more organic. The image presents this two options and a combination of the two with a centre with a gridded pattern ant organic surroundings.
 
 
@@ -27,6 +28,7 @@ There are two types of road building agents, the \emph{extenders} and the \emph{
 
 \begin{itemize}
 	\item[extenders] The \emph{extenders} search the area around exiting developments to look for areas that are not being served by any road to expand the current road network.
+	
 	\item[connectors] The \emph{connectors} roam trough existing roads and sampling random points in the road network within a given radius. It tries to reach that point trough the road via a BSF. If it cannot reach or the distance needed is over a threshold value, the agent tries to create a road between these two points.
 \end{itemize}
 
