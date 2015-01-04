@@ -10,8 +10,8 @@ If this technique is use naively commonly results in not very homogeneous textur
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.95\textwidth]{img/Theory/Tiling/irregular.png}
-	\caption{caption}
+	\includegraphics[width=0.95\textwidth]{img/Theory/Tiling/iregular.png}
+	\caption{One tile and an irregular pattern}
 	\label{fig:TIrregulartexture}
 \end{figure}
 
@@ -21,15 +21,43 @@ To make uniform planes, the boundary of each tile must be coherent, i. e., the b
 The easy, most simple solution is to make sure that all the tiles have the same borders all around. With this property it's guaranteed that any created texture will be homogeneous. But this solution doesn't provide much irregularity and the results present repeating patterns. 
 
 
-\emph{Wang Tiles} is a solution named after Mr Hao Wang that predicted that tiling was not possible. It received his name, not only for him being wrong, but because the prove that this is possible uses much of the work he did trying to prove the impossibility. This process allows tiling with an arbitrary number of different vertical and horizontal borders and from that calculate the set of tiles that are needed to create a full texture without inconsistencies. 
+\paragraph{Wang Tiles \cite{Cohen2003}.} % (fold)
+\label{par:wang_tiles_}
 
+ It is a solution named after Mr Hao Wang that predicted that tiling was not possible. It received his name, not only for him being wrong, but because the prove that this is possible uses much of the work he did trying to prove the impossibility. This process allows tiling with an arbitrary number of different vertical and horizontal borders and from that calculate the set of tiles that are needed to create a full texture without inconsistencies. 
+
+
+
+\begin{figure}
+        \centering
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{img/Theory/Tiling/tiles.png}
+			\caption{a)}
+			\label{fig:TTileSet}
+		\end{subfigure}
+        ~ ~%add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{img/Theory/Tiling/plane.png}
+			\caption{b)}
+			\label{fig:TPlanePortion}
+		\end{subfigure}
+        \caption{a) Eight Wang Tiles b) Portion of a plane}
+        \label{fig:WangTiles}
+\end{figure}
+
+So the process assign colors to the tiles borders and then matching colored borders are aligned forming a plane.
+
+
+
+% paragraph wang_tiles_ (end)
 
 
 As you might have noticed, the inner content of the tiles are not a problem. As we are trying to create the uniform textures by arranging this smaller pieces only the borders matter, so we can create a set of tiles with the same borders and whatever inner content we want. With this technique the result can be much more irregular. 
 
 
 
-\paragraph{Corner Tiles \cite{LD06AWTCECC}} % (fold)
+\paragraph{Corner Tiles. \cite{LD06AWTCECC}} % (fold)
  \label{par:corner_tiles}
 One alternative to Wang tiles with the points to be coloured.
 
@@ -37,9 +65,9 @@ The vanilla wang tiles have problems in the diagonals that are not taken into ac
  % paragraph corner_tiles (end) 
 
 
-\paragraph{Genetic tile generation} % (fold)
-\label{par:genetic_tile_generation}
-“The bottom line for me is, Wang tiles are amazing things until you try to use them seriously. They work great for stuff you can synthesise from the ground up. If you are trying to mix samples from real life, get ready for some trouble.” \cite{ProcWorld}
+% \paragraph{Genetic tile generation} % (fold)
+% \label{par:genetic_tile_generation}
+% “The bottom line for me is, Wang tiles are amazing things until you try to use them seriously. They work great for stuff you can synthesise from the ground up. If you are trying to mix samples from real life, get ready for some trouble.” \cite{ProcWorld}
 %\url{http://procworld.blogspot.pt/2013/01/tile-genetics.html}
 % paragraph Genetic tile generation (end)
 
