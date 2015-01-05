@@ -9,6 +9,16 @@
 \label{sec:related_work}
 %\input{sections/Works/0-citation-template.tex}
 
+As an active research field, there is a lot of work being done in this area. In this section I give an overview of the related work that has been carried out on procedural generation of cities. The generation of cities can be viewd as the sum of a few parts. The generation of terrains, road networks, buildings and other man made structures and cities in general.
+
+The first step, the \emph{generation of terrains} is often left out of procedural generation of cities, because there is also lot of research focused only on this area, mainly to produce models of nature. In this work I will not evaluate specificaly this factor but make specific comments when relevant.
+
+The \emph{road network} is a fundamental step for the generation of any city. It gives the city it's structure and defines the overall look. Most of the road networks are much different from each others and this makes the generalization dificult, but we can see some patterns when we analyze a road network from real cities. And this patterns are important for us if we want to have procedures that mimic this complex patterns. Some cities a have tightly structured grid network, like New York or a concentric radial pattern like Paris and others are purelly organic with the network presenting a nearlly random pattern. And we also have all the shades of grey in between.
+
+Next step is the \emph{generation of building}. This is also not easy, since that there is no limit to the number of different buildings that can be modeled. Since buildings naturally are different from each other both in functionality and style, this is a complex problem to model. One widelly adopted solution is to use group buildings by functionality. The most common groups are \emph{Commercial}, \emph{Residential} and \emph{Industrial} buildings. After this we have to care only about modelling different styles adapted to each functional group. This part is also hard because this style can be anything. The architectural styles, as explained in the Section~\ref{sub:architectural_styles}, have influences from a lot of different sources. 
+
+The last step is about the generation of the city itself, mainly join all the problems stated above and find a realistic layout for the city. Where to put each building is an important question that can have big impacts in the overall look of the models. Also how to group buildings and create neighborhoods, the function of the building is crucial, industrial buildings usualy are far from the residential ones, the same way that the comercial buildings are close together and also close to the residential areas.
+
 \input{sections/Works/1-CityEngine.tex}
 
 \input{sections/Works/2-Undiscovered-City.tex}
