@@ -4,7 +4,47 @@
 % Architecture
 % 
 
-\section{Architecture (2/3pgs)  [NOT DONE]}
+\section{Architecture (2/3pgs)  [Working]}
 \label{sec:architecture}
 
-Your proposed architecture. Can have lots of pictures and bullet points so it is easy to understand.
+%Your proposed architecture. Can have lots of pictures and bullet points so it is easy to understand.
+
+To model a city, there are different points that need to be care about differently. I define four layers for the generation of a city model, the first is the \emph{ground}, the generation of the terrain with the elevations and lower areas, possibly with water, in form of a height map. The next layer is the elaboration of an \emph{urbanistic plan ??} that defines the areas of a city, the number of higher density zones and the distribuition of them throughout the terrain. With that, we can start the \emph{road network} generation by defining where the main roads will be placed as they are built connecting this high density zones. With this high level road network we have the city structure that will be filled in by smaller networks that will model the neighborhoods and after that the lots. The last layer are the \emph{buildings} that will be based on the lots previously defined. This lots have to be classified by types, as residential, comercial or industrial.
+
+%To model a city, there are different points that need to be care about differently. I define four layers for the generation of a city model, the first is the \emph{ground}, the generation of the terrain with the elevations and lower areas possibly with water. The next layer is the \emph{road network}, that is the skeleton of any city, providing structure but dependent on the terrain where it's being generated. With the generation of roads it's easier to make an \emph{urbanistic plan ??} that starts with split the areas between the roads in neighborhoods and after that in lots. With the classification of the lots by their types, as residential, comercial or industrial we can start the last layer \emph{building}. In this phase the buildings are modeled in each place accordingly to the plan made before.
+
+\subsection{Ground} % (fold)
+\label{sub:ground}
+The ground will be generated with the use of height maps. This height maps could be user input if, like the example of the chinese city, the goal is to generate a city over a specific real place or it can be randomly generated through the use of noise planes.
+
+This heigth maps will be generated form noise planes, explained in Section~\ref{ssub:noise}. This will allow the creation of natural look height planes that will provide a realistic foundation for the city that will be modeled upon.
+
+% subsection ground (end)
+
+
+\subsection{Urbanistic Plan} % (fold)
+\label{sub:urbanistic_plan}
+This phase will start by defining the number of high density areas (HDAs) and next to place them in the terrain. 
+%HDAs are high density areas, usualy business centers, where the average number of people there is higher then the average.
+
+The number of HDAs will be estimated by the desired size of the city. Then I have to place this points on the terrain and to get variability this distribution will be made randomly but according to some constrains. This constrains are minimum distance between HDAs and 
+
+With the high density areas placed on the terrain, this points act as nodes in a graph that and they are connected by main roads. This provides the primary structure for the remaining road network to be built upon.
+
+
+% subsection urbanistic_plan (end)
+
+
+\subsection{Road Network} % (fold)
+\label{sub:road_network}
+The generation of the road network will be made by the use of growth based techniques like L-Systems that will make possible to achieve good results fast.
+
+% subsection road_network (end)
+
+\subsection{Building} % (fold)
+\label{sub:building}
+The buildings will be randomly generated from a set of predefined rules, that will take into account the type of building and the architectural style that will define each building.
+
+
+% subsection building (end)
+

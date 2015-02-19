@@ -40,6 +40,41 @@ For instance, the Figure~\ref{fig:merge} shows the result of the interpolation o
 	\label{fig:noise}
 \end{figure}
 
-Noise is also used to 
+
+Noise can also be used to generate planes. The method used is the same as the 1D problem but we have to generate a lot more data points that after are interpolated as a plane. This results in noisy images that are often used to model clouds, smoke and other textures with similar visual properties, Figure~\ref{fig:NTextures}. Another application for this technique is the generation of height maps like the one in figure .
+
+
+
+\begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{img/Theory/Perlin_Noise/gradient_discrete.png}
+                \label{fig:Fleaf}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{img/Theory/Perlin_Noise/gradient_grey.png}
+                \label{fig:Fbrocoli}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{img/Theory/Perlin_Noise/gradient_fire.png}
+                \label{fig:Fbrocoli}
+        \end{subfigure}
+        \caption{Gradient maped textures from \cite{NoisesGAMES}}
+        \label{fig:NTextures}
+\end{figure}
+
+Another application for Noise planes are for \emph{object placement} on a grid. By creating a noise plane with the same size of the grid, with each cell of the grid corresponding to one pixel of noise, the object placement is done by choosing each object for each cell according to the noise value. Figure~\ref{fig:NCity} shows a city which the buildings where placed with the use of noises.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.95\textwidth]{img/Theory/Perlin_Noise/NoisyCity.jpg}
+	\caption{Objects Placed with a noise plane from \cite{NoisesGAMES}}
+	\label{fig:NCity}
+\end{figure}
+
 
 % subsubsection noise (end)
